@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mc-server-stop",
+  "version": "${version}",
+
+  "name": "MC Server Stop",
+  "description": "This mod stops the server when the last player leaves.",
+  "authors": [
+    "Marsman512"
+  ],
+
+  "license": "GPLv3",
+  "icon": "assets/mc-server-stop/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "me.marsman512.mc_server_stop.McServerStop"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.5",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
